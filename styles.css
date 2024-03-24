@@ -27,7 +27,7 @@ body {
 
 .header {
     display: grid;
-    grid-template-columns: 0.04fr 0.1fr 1.2fr 0.17fr repeat(2, 0.1fr) 0.2fr 0.05fr;
+    grid-template-columns: 0.04fr 0.1fr 1.2fr 0.1fr repeat(2, 0.1fr) 0.15fr 0.05fr;
     justify-content: center;
     align-items: center;
 }
@@ -39,6 +39,14 @@ body {
     height: 20px;
     justify-self: center;
     grid-column: 2/3;
+}
+
+.bell {
+    background-color: violet;
+    width: 20px;
+    height: 20px;
+    grid-column: 5/6;
+    justify-self: center;
 }
 
 .headerpfp {
@@ -70,10 +78,28 @@ input[type='search']:focus {
 
 .header2 {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 3fr 0.7fr 0.7fr 0.7fr 0.2fr;
+    grid-template-rows: 1fr 1fr;
     box-shadow: 0px 8px 10px -10px rgba(0, 0, 0, 0.2);
 
 }
+
+.header2 > p:nth-of-type(1) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 12px;
+    font-weight: 600;
+    align-self:self-end;
+}
+
+.header2 > p:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: self-start;
+}
+
 
 .header2 > button {
     appearance: none;
@@ -86,6 +112,22 @@ input[type='search']:focus {
     align-self: center;
     padding: 13px 30px;
 }
+
+.header2 > button:nth-of-type(1){
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.header2 > button:nth-of-type(2) {
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.header2 > button:nth-of-type(3) {
+    grid-column: 5/6;
+    grid-row: 1/3;
+}
+
 
 .header2 > p:nth-of-type(1) {
 
