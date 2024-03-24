@@ -7,18 +7,18 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 50px repeat(9, 100px);
-    overflow: hidden;
+    grid-template-rows: 50px repeat(11, 100px);
 }
 
 .sidebar {
     grid-column: 1/2;
-    grid-row: 1/11;
+    grid-row: 1/13;
     background-color: #1992D4;
     display: grid;
     grid-template-rows: 100px repeat(11, 50px);
     padding-left: 50px;
     color: white;
+    
 }
 
 .sidebar > h2:nth-of-type(1){
@@ -74,14 +74,16 @@ input[type='search']:focus {
 .header > p {
     grid-column: 7/8;
     justify-self: center;
+    font-weight: bolder;
 }
 
 .header2 {
     display: grid;
-    grid-template-columns: 0.9fr 3fr 0.7fr 0.7fr 0.7fr 0.2fr;
+    grid-template-columns: 0.7fr 3fr 0.7fr 0.7fr 0.7fr 0.2fr;
     grid-template-rows: 1fr 1fr;
-    box-shadow: 0px 8px 10px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 10px -10px rgba(0, 0, 0, 0.6);
     align-items: center;
+    z-index: 1;
 }
 
 .header2pfp {
@@ -143,3 +145,121 @@ input[type='search']:focus {
     grid-column: 5/6;
     grid-row: 1/3;
 }
+
+.content {
+    display: grid;
+    grid-row: 3/13;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr repeat(3, 4fr);
+    background-color: #E2E8F0;
+}
+
+.projects {
+    display: grid;
+    grid-area: 1 / 1 / 5/ 3;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px repeat(3, 1fr);
+    padding-left: 10px;
+    gap: 30px 25px;
+}
+
+.projects > h3 {
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    justify-self: start;
+    margin-left: 15px;
+    margin-top: 75px;
+}
+
+.project {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 20px;
+    border-left: goldenrod solid 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 15px;
+    height: 200px;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    grid-template-columns: 1fr 0.2fr 0.2fr 0.2fr;
+}
+
+.projecticon {
+    background-color: aqua;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+    grid-row: 3/4;
+}
+
+.icon1
+ {
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+
+.icon2
+ {
+    grid-column: 3/4;
+    justify-self: center;
+}
+
+
+.icon3 {
+    grid-column: 4/5;
+    justify-self: center;
+}
+
+.projecttext {
+    grid-column: 1/5;
+}
+
+.project > p {
+    margin-top: -15px;
+    font-size: 15px;
+    color: gray;
+    font-weight: 500;
+}
+
+.project1 {
+    grid-row: 2/3;
+}
+
+.project2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.project3 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+.project4 {
+    grid-row: 3/4;
+}
+
+.project5 {
+    grid-row: 4/5;
+    grid-column: 2/3;
+}
+
+.project6 {
+    grid-row: 4/5;
+}
+
+
+
+
