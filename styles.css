@@ -7,12 +7,12 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 50px repeat(11, 100px);
+    grid-template-rows: 50px repeat(13, 100px);
 }
 
 .sidebar {
     grid-column: 1/2;
-    grid-row: 1/13;
+    grid-row: 1/15;
     background-color: #1992D4;
     display: grid;
     grid-template-rows: 100px repeat(11, 50px);
@@ -117,8 +117,6 @@ input[type='search']:focus {
     flex-direction: column;
 }
 
-
-
 .header2 > button {
     appearance: none;
     border: none;
@@ -148,10 +146,11 @@ input[type='search']:focus {
 
 .content {
     display: grid;
-    grid-row: 3/13;
+    grid-row: 3/15;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr repeat(3, 4fr);
     background-color: #E2E8F0;
+    padding-bottom: 50px;
 }
 
 .projects {
@@ -184,7 +183,7 @@ input[type='search']:focus {
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     margin-left: 15px;
-    height: 200px;
+    height: 0.5fr;
     display: grid;
     grid-template-rows: 1fr 0.5fr;
     grid-template-columns: 1fr 0.2fr 0.2fr 0.2fr;
