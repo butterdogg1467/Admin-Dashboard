@@ -271,9 +271,11 @@ input[type='search']:focus {
     border-radius: 10px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     font-size: 14px;
     width: 70%;
-    height: 500px;
+    height: 1fr;
     margin-top: 18px;
     display: grid;
     align-self: center;
@@ -318,7 +320,7 @@ input[type='search']:focus {
     width: 70%;
     display: grid;
     grid-template-columns: 0.2fr 1fr;
-    grid-template-rows: 75px 75px 75px 75px;
+    grid-template-rows: 75px 75px 75px 75px 75px 75px 75px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 5px;
@@ -399,6 +401,39 @@ input[type='search']:focus {
 #user4 {
     grid-row: 4/5;
     grid-column: 2/3;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-self: end;
+    margin-left: 10px;
+    margin-bottom: 4px
+}
+
+#user5 {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-self: end;
+    margin-left: 10px;
+    margin-bottom: 4px
+}
+
+#user6 {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-self: end;
+    margin-left: 10px;
+    margin-bottom: 4px
+}
+
+#user7 {
     align-self: center;
     display: flex;
     flex-direction: column;
