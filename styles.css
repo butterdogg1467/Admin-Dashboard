@@ -270,7 +270,8 @@ input[type='search']:focus {
     background-color: white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    padding: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size: 14px;
     width: 70%;
     height: 500px;
@@ -299,5 +300,121 @@ input[type='search']:focus {
 }
 
 .announcements > h3 {
-    margin-left: 43px;
+    margin-left: 33px;
+    position: relative;
+    top: 21px;
+}
+
+.trending {
+    display: flex;  
+    flex-direction: column;
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.usercontainer {
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-size: 14px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 75px 75px 75px 75px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.usercontainer {
+    align-self: center;
+}
+
+.trending > h3 {
+    margin-left: 33px;
+}
+
+.userpfp {
+    background-color: aquamarine;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+#userpfp1 {
+    grid-row: 1/2;
+}
+
+#userpfp2 {
+    grid-row: 2/3;
+}
+
+#userpfp3 {
+    grid-row: 3/4;
+}
+
+#userpfp4 {
+    grid-row: 4/5;
+}
+
+#user1 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-self: end;
+    margin-left: 10px;
+    margin-bottom: 4px
+}
+
+#user2 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-self: end;
+    margin-left: 10px;
+    margin-bottom: 4px
+}
+
+#user3 {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-self: end;
+    margin-left: 10px;
+    margin-bottom: 4px
+}
+
+#user4 {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-self: end;
+    margin-left: 10px;
+    margin-bottom: 4px
+}
+
+.user h5 {
+    margin: 0px;
+    font-size: 15px;
+}
+
+.user p {
+    margin-top: 0;
 }
