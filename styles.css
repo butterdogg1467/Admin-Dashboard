@@ -7,22 +7,56 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 50px repeat(13, 100px);
+    grid-template-rows: 50px repeat(14, 100px);
 }
 
 .sidebar {
     grid-column: 1/2;
-    grid-row: 1/15;
+    grid-row: 1/16;
     background-color: #1992D4;
     display: grid;
     grid-template-rows: 100px repeat(11, 50px);
+    grid-template-columns: 0.2fr 1fr;
     padding-left: 50px;
     color: white;
-    
+}
+
+.sidebar > img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+    align-self: self-end;
+}
+
+.sidebar > img:nth-of-type(1) {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.sidebar > img:nth-of-type(8) {
+    grid-row: 9/10;
 }
 
 .sidebar > h2:nth-of-type(1){
     grid-row: 2/3;
+}
+
+.sidebar > h1 {
+    grid-column: 2/3;
+}
+
+.sidebar > h2 {
+    grid-column: 2/3;
+}
+
+.sidebar > div {
+    grid-row: 8/9;
+    grid-column: 2/3;
+}
+
+.sidebar > h2:hover {
+    filter: invert(8%);
+    cursor: pointer;
 }
 
 .header {
@@ -33,20 +67,29 @@ body {
 }
 
 .searchicon {
-    background-color: blue;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     justify-self: center;
     grid-column: 2/3;
 }
 
 .bell {
-    background-color: violet;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     grid-column: 5/6;
     justify-self: center;
+}
+
+.bell:hover {
+    cursor: pointer;
+    filter: invert(50%);
+}
+
+
+button:hover {
+    cursor: pointer;
+    filter:contrast(1.5);
 }
 
 .headerpfp {
@@ -146,7 +189,7 @@ input[type='search']:focus {
 
 .content {
     display: grid;
-    grid-row: 3/15;
+    grid-row: 3/16;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.5fr repeat(3, 4fr);
     background-color: #E2E8F0;
@@ -178,22 +221,23 @@ input[type='search']:focus {
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
-    padding-top: 20px;
     border-left: goldenrod solid 10px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     margin-left: 15px;
-    height: 0.5fr;
     display: grid;
     grid-template-rows: 1fr 0.5fr;
     grid-template-columns: 1fr 0.2fr 0.2fr 0.2fr;
 }
 
 .projecticon {
-    background-color: aqua;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
+}
+
+.projecticon:hover {
+    cursor: pointer;
+    filter: invert(50%);
 }
 
 .icon1,
@@ -451,4 +495,9 @@ input[type='search']:focus {
 
 .user p {
     margin-top: 0;
+}
+
+img {
+    width: 25px;
+    height: 25px;
 }
