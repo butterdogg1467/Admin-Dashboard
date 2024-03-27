@@ -95,7 +95,6 @@ button:hover {
 .headerpfp {
     width: 40px;
     height: 40px;
-    background-color: red;
     grid-column: 6/7;
     justify-self: center;
     border-radius: 50%;
@@ -130,7 +129,6 @@ input[type='search']:focus {
 }
 
 .header2pfp {
-    background-color: purple;
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -228,6 +226,14 @@ input[type='search']:focus {
     display: grid;
     grid-template-rows: 1fr 0.5fr;
     grid-template-columns: 1fr 0.2fr 0.2fr 0.2fr;
+    transition: padding-left 0.5s, padding-right 0.5s, padding-top 0.5s, padding-bottom 0.5s, border-left 0.5s;
+}
+
+.project:hover {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    border-left: goldenrod solid 20px;
 }
 
 .projecticon {
@@ -323,6 +329,14 @@ input[type='search']:focus {
     margin-top: 18px;
     display: grid;
     align-self: center;
+    transition: padding-left 0.5s, padding-right 0.5s, padding-top 0.5s, padding-bottom 0.5s;
+}
+
+.announcementstextcontent:hover {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 #announcement1 > p {
@@ -345,7 +359,7 @@ input[type='search']:focus {
 }
 
 .announcements > h3 {
-    margin-left: 33px;
+    margin-left: 48px;
     position: relative;
     top: 21px;
 }
@@ -369,6 +383,19 @@ input[type='search']:focus {
     padding-right: 30px;
     padding-bottom: 5px;
     padding-top: 10px;
+    transition: padding-left 0.5s, padding-right 0.5s, padding-top 0.5s, padding-bottom 0.5s;
+}
+
+.usercontainer:hover {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+
+.userpfp:hover {
+    width: 50px;
+    height: 50px;
 }
 
 .usercontainer {
@@ -376,15 +403,15 @@ input[type='search']:focus {
 }
 
 .trending > h3 {
-    margin-left: 33px;
+    margin-left: 48px;
 }
 
 .userpfp {
-    background-color: aquamarine;
     width: 45px;
     height: 45px;
     border-radius: 50%;
     align-self: center;
+    transition:  height 0.5s, width 0.5s;
 }
 
 #userpfp1 {
